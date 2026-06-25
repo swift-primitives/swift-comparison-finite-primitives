@@ -1,9 +1,9 @@
 // Comparison+Finite.swift
 // Finite extensions for Comparison from comparison-primitives.
 
+import Cardinal_Primitives
 public import Comparison_Primitives
 public import Finite_Enumerable_Primitives
-import Cardinal_Primitives
 import Ordinal_Primitives
 public import Pair_Primitives
 
@@ -16,7 +16,7 @@ extension Comparison {
 
 // MARK: - Finite.Enumerable
 
-extension Comparison: Finite.Enumerable {
+extension Comparison: @retroactive Finite.Enumerable {
     /// Number of comparison values.
     @inlinable
     public static var count: Cardinal { 3 }
